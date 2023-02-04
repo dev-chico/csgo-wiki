@@ -1,0 +1,36 @@
+@import "../../styles/colors.scss";
+
+.home {
+  width: 100%;
+  height: 100vh;
+  padding-top: 48px;
+  position: relative;
+  background: radial-gradient(
+    100% 316.05% at 0% 50%,
+    #020202 0%,
+    rgba(37, 36, 34, 0) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & .background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    height: 100vh;
+    z-index: -10;
+  }
+
+  & .social-medias {
+    position: absolute;
+    bottom: 64px;
+    left: 64px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}

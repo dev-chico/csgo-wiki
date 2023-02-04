@@ -1,0 +1,35 @@
+@import "../../styles/colors.scss";
+
+.header {
+  padding: 0px 24px;
+  background-color: transparent;
+  min-height: 72px;
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  z-index: 1;
+
+  & .list-links {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  & a {
+    color: $white;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 1.3em;
+    font-weight: 800;
+    transition: all 0.15s ease-in-out;
+
+    &.active {
+      background-color: $orange;
+    }
+
+    &:hover {
+      color: $light-orange;
+    }
+  }
+}

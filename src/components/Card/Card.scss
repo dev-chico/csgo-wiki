@@ -1,0 +1,92 @@
+@import "../../styles/colors.scss";
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+  border-radius: 8px;
+  background-color: $white;
+  border: 1px solid #999;
+
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: linear-gradient(to right, #eee, #fff, #eee);
+  }
+
+  & main {
+    flex: 1;
+    height: fit-content;
+    padding: 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+
+      & .name {
+        color: $orange;
+      }
+
+      & .description {
+        color: #555;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        flex: 1;
+      }
+
+      & .children-card {
+        width: 100%;
+      }
+    }
+
+    & .divider {
+      background-color: $light-gray;
+      width: 100%;
+      height: 1px;
+      margin: 16px 0px;
+
+      &.top {
+        width: 50%;
+        margin-top: 0px;
+      }
+    }
+
+    & .btn-steam {
+      width: 100%;
+      color: $green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-end;
+      gap: 8px;
+      font-weight: 600;
+      transition: all 0.12s ease-in-out;
+
+      & .icon {
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        color: $dark-green;
+      }
+
+      &:hover,
+      &:hover .icon {
+        opacity: 1;
+        color: $dark-green;
+      }
+    }
+  }
+}
