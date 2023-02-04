@@ -24,7 +24,6 @@ export function Card({ description, image, name, children }: ICardProps) {
         <div className="content">
           <h2 className="name">{name}</h2>
           <p className="description">{description && description}</p>
-
           {children && (
             <div className="children-card">
               <div className="divider top" />

@@ -1,5 +1,5 @@
 import { Card } from "../../components/Card/Card";
-import { useFetch } from "../../utils/useFetch";
+import { useFetch } from "../../hooks/useFetch";
 import { PageLayout } from "../../components/PageLayout/PageLayout";
 import { FaGem } from "react-icons/fa";
 

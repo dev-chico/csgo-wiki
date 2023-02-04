@@ -1,4 +1,4 @@
-import { useFetch } from "../../utils/useFetch";
+import { useFetch } from "../../hooks/useFetch";
 import { Card } from "../../components/Card/Card";
 import { PageLayout } from "../../components/PageLayout/PageLayout";
 

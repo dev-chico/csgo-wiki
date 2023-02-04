@@ -1,8 +1,7 @@
 import { Suspense } from "react";
+import { Link } from "react-router-dom";
 import { Jumbotron } from "./Jumbotron/Jumbotron";
 import { Loader } from "../../components/Loader/Loader";
-import backgroundImage from "../../assets/imgs/background.png";
-import "./Home.scss";
 import {
   FaFacebook,
   FaInstagram,
@@ -10,7 +9,8 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import backgroundImage from "../../assets/imgs/background.png";
+import "./Home.scss";
 
 export function Home() {
   return (

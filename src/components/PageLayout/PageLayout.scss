@@ -7,9 +7,11 @@
   flex-direction: column;
   gap: 48px;
   padding-bottom: 64px;
-  margin-top: 168px;
+  margin-top: 128px;
 
   & .title {
+    border-top: 1px solid $dark-gray;
+    padding-top: 40px;
     color: $white;
     letter-spacing: 2px;
     text-align: center;

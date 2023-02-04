@@ -45,12 +45,6 @@ const Musics = lazy(() =>
   }))
 );
 
-const NotFound = lazy(() =>
-  import("./pages/NotFound/NotFound").then(({ NotFound }) => ({
-    default: NotFound,
-  }))
-);
-
 export function AppRoutes() {
   return (
     <Suspense fallback={<Loader />}>
@@ -62,7 +56,7 @@ export function AppRoutes() {
         <Route path={paths.agents} element={<Agents />} />
         <Route path={paths.graffiti} element={<Graffiti />} />
         <Route path={paths.music} element={<Musics />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Suspense>
   );

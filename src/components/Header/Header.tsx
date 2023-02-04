@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 import paths from "../../constants/paths";
 import "./Header.scss";
-import { FaHome } from "react-icons/fa";
 
 export function Header() {
   const location = useLocation();
@@ -10,7 +10,6 @@ export function Header() {
     if (location.pathname.includes(path)) {
       return "active";
     }
-
     return "";
   }
 

@@ -26,7 +26,6 @@ export function PageLayout({
 
   useEffect(() => {
     window.addEventListener("scroll", getPageYAfterScroll);
-
     return () => window.removeEventListener("scroll", getPageYAfterScroll);
   }, []);
 

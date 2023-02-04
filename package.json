@@ -1,7 +1,7 @@
 {
   "name": "csgo-wiki",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,6 @@
     "server": "json-server --watch ./mocks/csgo-wiki.json -p 3002"
   },
   "dependencies": {
-    "axios": "^1.2.3",
     "json-server": "^0.17.1",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
