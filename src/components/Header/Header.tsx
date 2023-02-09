@@ -6,11 +6,17 @@ import "./Header.scss";
 export function Header() {
   const location = useLocation();
 
+  function specialCharacterRemover(string: string) {
+    return string.replace(/[^a-zA-Z0-9]/g, "");
+  }
+
   function setActiveClass(path: string) {
-    if (location.pathname.includes(path)) {
+    if (
+      specialCharacterRemover(path) ===
+      specialCharacterRemover(location.pathname)
+    ) {
       return "active";
     }
-    return "";
   }
 
   return (

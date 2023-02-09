@@ -1,5 +1,5 @@
 export default {
-  home: "/home",
+  home: "/",
   skins: "/skins",
   stickers: "/stickers",
   cases: "/cases",
