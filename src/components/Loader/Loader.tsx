@@ -1,7 +1,7 @@
 import "./Loader.scss";
 
 interface ILoaderProps {
-  size?: "small" | "large";
+  size?: "small";
 }
 
 export function Loader({ size }: ILoaderProps) {
